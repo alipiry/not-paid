@@ -11,7 +11,7 @@
 	
 	if (days > 0) {
 		const daysLate = daysDeadline - days;
-		const opacity = (daysLate * 100 / daysDeadline) / 100;
+		let opacity = (daysLate * 100 / daysDeadline) / 100;
 			opacity = (opacity < 0) ? 0 : opacity;
 			opacity = (opacity > 1) ? 1 : opacity;
 		if (opacity >= 0 && opacity <= 1) {
